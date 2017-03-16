@@ -76,6 +76,10 @@ function fizzBuzz(num) {
         return (num);
     }
 }
+// function fizzBuzz(num) {
+//     // array math approach
+//     return (((['fizz'][num % 3] || '') + (['buzz'][num % 5] || '')) || num);
+// }
 
 function isPrime(num) {
     //return true if num is prime.
@@ -87,24 +91,13 @@ function isPrime(num) {
         return false;
     }
 
-    if (num <= 3) { // 2 and 3 are primes
+    for (var i = 2; i < Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
         return true;
     }
-
-    if (num % 2 === 0) { // is num divisible by 2 or 3?
-        return false;
-    }
-    if (num % 3 === 0) {
-        return false;
-    }
-
-    for (var i = 4; i < num; i++) { // use a FOR LOOP to check num's divisors
-        if (num % i === 0) {
-                return false;
-            }
-            return true;
-        }
-    }
+}
 
     function returnFirst(arr) {
         //return the first item from the array
