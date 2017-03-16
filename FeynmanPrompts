@@ -1,0 +1,14 @@
+for loop
+A block of code that repeats over and over until a specific condition is met.
+
+&& || !
+Logical operators. If both sides are true && "and" is true. If either side is true || "or" is true. ! "not" only needs one argument and makes it the opposite of its value (false if true, true if false). 
+
+Array
+Think of a spreadsheet table.
+
+git
+Software that helps you keep track of changes to your work. It also helps groups of people working on the same document to not clobber each other's work.
+
+GitHub
+Cloud based service for git. Lets you backup your work offsite and easily share it over the web.
